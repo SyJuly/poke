@@ -1,104 +1,79 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Python
+*.pyc
+*.pyo
 
-# C extensions
-*.so
+# Project
+/public/static
+/public/media
+/sql
+/fcgi/django.fcgi
+/static/css/*.css
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
+# Common IDEs
+*.swp
+.idea/
+.buildpath
+.project
+.settings
+atlassian-ide-plugin.xml
+
+# Virtualenv
+*-env/
+
+# Eggs that occur when installing through pip install -e
 *.egg
-MANIFEST
+*.egg-info
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Databases
+*.sqlite
+*.sql
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# Version file for source distribution
+RELEASE-VERSION
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
+#######################################
+#####   From HTML5 Boilerplate   ######
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
 *.log
-local_settings.py
-db.sqlite3
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
 
-# Flask stuff:
-instance/
-.webassets-cache
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
 
-# Scrapy stuff:
-.scrapy
+# Dreamweaver added files
+_notes
+dwsync.xml
 
-# Sphinx documentation
-docs/_build/
+# Komodo
+*.komodoproject
+.komodotools
 
-# PyBuilder
-target/
+# Folders to ignore
+.hg
+.svn
+.CVS
+intermediate
+publish
+.idea
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
+# build script local files
+web/build/buildinfo.properties
+web/build/config/buildinfo.properties
