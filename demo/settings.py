@@ -138,7 +138,8 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'demo'
+    'demo',
+    'cmsplugin_css_background'
 )
 
 LANGUAGES = (
@@ -175,7 +176,15 @@ CMS_TEMPLATES = (
 
 CMS_PERMISSION = True
 
-CMS_PLACEHOLDER_CONF = {}
+CMS_PLACEHOLDER_CONF = {
+        'element_background_image': {
+            'plugins': ['CssBackgroundPlugin'],
+            'limits': {
+                'global': 1,
+            },
+        },
+    }
+
 
 DATABASES = {
     'default': {
